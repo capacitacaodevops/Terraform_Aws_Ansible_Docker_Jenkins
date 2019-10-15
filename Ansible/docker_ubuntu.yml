@@ -34,14 +34,14 @@
 
 
     # Pull image specified by variable default_image from the Docker Hub
-    - name: pushing specific image 
-      docker_image:
-        name: "{{ default_container_name }}"
-        repository: "{{ default_container_image }}"
-        state: present
-        pull: yes
-        push: no
-        force: no
+    #- name: pushing specific image 
+    #  docker_image:
+    #    name: "{{ default_container_name }}"
+    #    repository: "{{ default_container_image }}"
+    #    state: present
+    #    pull: yes
+    #    push: no
+    #    force: no
 
 
     # Creates the number of containers defined by the variable create_containers, using default values
