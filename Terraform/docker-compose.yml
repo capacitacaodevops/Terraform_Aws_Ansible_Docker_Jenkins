@@ -1,0 +1,8 @@
+version: '3'
+services: 
+  marioS: 
+    image: pengbai/docker-supermario
+    hostname: marioH
+    container_name: marioH
+    ports: 
+      - 8081:8080

@@ -1,0 +1,120 @@
+the input device is not a TTY
+the input device is not a TTY
+Running from: /usr/share/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2019-10-08 21:46:39.438+0000 [id=1]	INFO	org.eclipse.jetty.util.log.Log#initialized: Logging initialized @430ms to org.eclipse.jetty.util.log.JavaUtilLog
+2019-10-08 21:46:39.548+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2019-10-08 21:46:39.582+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2019-10-08 21:46:39.633+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-9.4.z-SNAPSHOT; built: 2019-05-02T00:04:53.875Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_212-b04
+2019-10-08 21:46:39.918+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2019-10-08 21:46:39.962+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: DefaultSessionIdManager workerName=node0
+2019-10-08 21:46:39.962+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: No SessionScavenger set, using defaults
+2019-10-08 21:46:39.966+0000 [id=1]	INFO	o.e.j.server.session.HouseKeeper#startScavenging: node0 Scavenging every 600000ms
+Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2019-10-08 21:46:40.499+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@70e38ce1{Jenkins v2.199,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+2019-10-08 21:46:40.522+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@668bc3d5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2019-10-08 21:46:40.522+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started @1515ms
+2019-10-08 21:46:40.523+0000 [id=22]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine v4.0 running: controlPort=disabled
+2019-10-08 21:46:42.407+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2019-10-08 21:46:42.609+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2019-10-08 21:46:48.061+0000 [id=42]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2019-10-08 21:46:48.073+0000 [id=41]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2019-10-08 21:46:49.328+0000 [id=32]	INFO	h.ExtensionFinder$GuiceFinder$FaultTolerantScope$1#error: Failed to instantiate optional component hudson.plugins.build_timeout.operations.AbortAndRestartOperation$DescriptorImpl; skipping
+2019-10-08 21:46:49.527+0000 [id=37]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2019-10-08 21:46:49.673+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2019-10-08 21:46:49.706+0000 [id=55]	INFO	hudson.model.AsyncPeriodicWork$1#run: Started Download metadata
+2019-10-08 21:46:49.718+0000 [id=55]	INFO	hudson.model.AsyncPeriodicWork$1#run: Finished Download metadata. 10 ms
+2019-10-08 21:46:49.759+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2019-10-08 21:46:49.903+0000 [id=21]	INFO	hudson.WebAppMain$3#run: Jenkins is fully up and running
+GOT CONTEXT FOR Iniciar Container mario
+GOT CONTEXT FOR Baixar container jenkins
+2019-10-08 21:49:13.448+0000 [id=23]	INFO	winstone.Logger#logInternal: JVM is terminating. Shutting down Jetty
+docker: Error response from daemon: Conflict. The container name "/jenkins" is already in use by container "d39076d988562a5b65805a30cc14d754178c8f13e71d004b15e4d62f1aedb93a". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+Running from: /usr/share/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2019-10-08 21:51:53.154+0000 [id=1]	INFO	org.eclipse.jetty.util.log.Log#initialized: Logging initialized @590ms to org.eclipse.jetty.util.log.JavaUtilLog
+2019-10-08 21:51:53.319+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2019-10-08 21:51:53.372+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2019-10-08 21:51:53.454+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-9.4.z-SNAPSHOT; built: 2019-05-02T00:04:53.875Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_212-b04
+2019-10-08 21:51:53.843+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2019-10-08 21:51:53.930+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: DefaultSessionIdManager workerName=node0
+2019-10-08 21:51:53.931+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: No SessionScavenger set, using defaults
+2019-10-08 21:51:53.937+0000 [id=1]	INFO	o.e.j.server.session.HouseKeeper#startScavenging: node0 Scavenging every 660000ms
+Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2019-10-08 21:51:54.718+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@70e38ce1{Jenkins v2.199,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+2019-10-08 21:51:54.749+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@668bc3d5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2019-10-08 21:51:54.749+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started @2185ms
+2019-10-08 21:51:54.769+0000 [id=22]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine v4.0 running: controlPort=disabled
+2019-10-08 21:51:56.983+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2019-10-08 21:51:57.278+0000 [id=27]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2019-10-08 21:52:04.993+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2019-10-08 21:52:05.005+0000 [id=36]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2019-10-08 21:52:06.506+0000 [id=36]	INFO	h.ExtensionFinder$GuiceFinder$FaultTolerantScope$1#error: Failed to instantiate optional component hudson.plugins.build_timeout.operations.AbortAndRestartOperation$DescriptorImpl; skipping
+2019-10-08 21:52:06.755+0000 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2019-10-08 21:52:06.953+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2019-10-08 21:52:07.010+0000 [id=55]	INFO	hudson.model.AsyncPeriodicWork$1#run: Started Download metadata
+2019-10-08 21:52:07.025+0000 [id=55]	INFO	hudson.model.AsyncPeriodicWork$1#run: Finished Download metadata. 13 ms
+2019-10-08 21:52:07.061+0000 [id=27]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2019-10-08 21:52:07.252+0000 [id=21]	INFO	hudson.WebAppMain$3#run: Jenkins is fully up and running
+docker: Error response from daemon: Conflict. The container name "/jenkins" is already in use by container "ce07a8fdb78cd818ba02e0292b37903f37069c012c53f0fea66d23140ae93a4e". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+2019-10-08 21:55:09.561+0000 [id=23]	INFO	winstone.Logger#logInternal: JVM is terminating. Shutting down Jetty
+Running from: /usr/share/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2019-10-08 21:55:18.135+0000 [id=1]	INFO	org.eclipse.jetty.util.log.Log#initialized: Logging initialized @511ms to org.eclipse.jetty.util.log.JavaUtilLog
+2019-10-08 21:55:18.289+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2019-10-08 21:55:18.337+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2019-10-08 21:55:18.412+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-9.4.z-SNAPSHOT; built: 2019-05-02T00:04:53.875Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_212-b04
+2019-10-08 21:55:18.751+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2019-10-08 21:55:18.821+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: DefaultSessionIdManager workerName=node0
+2019-10-08 21:55:18.821+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: No SessionScavenger set, using defaults
+2019-10-08 21:55:18.826+0000 [id=1]	INFO	o.e.j.server.session.HouseKeeper#startScavenging: node0 Scavenging every 660000ms
+Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2019-10-08 21:55:19.590+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@70e38ce1{Jenkins v2.199,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+2019-10-08 21:55:19.622+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@668bc3d5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2019-10-08 21:55:19.623+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started @2000ms
+2019-10-08 21:55:19.624+0000 [id=22]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine v4.0 running: controlPort=disabled
+2019-10-08 21:55:21.625+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2019-10-08 21:55:21.859+0000 [id=42]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2019-10-08 21:55:28.208+0000 [id=36]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2019-10-08 21:55:28.219+0000 [id=31]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2019-10-08 21:55:29.542+0000 [id=40]	INFO	h.ExtensionFinder$GuiceFinder$FaultTolerantScope$1#error: Failed to instantiate optional component hudson.plugins.build_timeout.operations.AbortAndRestartOperation$DescriptorImpl; skipping
+2019-10-08 21:55:29.774+0000 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2019-10-08 21:55:29.941+0000 [id=40]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2019-10-08 21:55:29.953+0000 [id=55]	INFO	hudson.model.AsyncPeriodicWork$1#run: Started Download metadata
+2019-10-08 21:55:29.990+0000 [id=55]	INFO	hudson.model.AsyncPeriodicWork$1#run: Finished Download metadata. 34 ms
+2019-10-08 21:55:30.025+0000 [id=34]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2019-10-08 21:55:30.166+0000 [id=21]	INFO	hudson.WebAppMain$3#run: Jenkins is fully up and running
+GOT CONTEXT FOR Iniciar Container mario
+GOT CONTEXT FOR Baixar container jenkins
+2019-10-08 21:59:14.399+0000 [id=23]	INFO	winstone.Logger#logInternal: JVM is terminating. Shutting down Jetty
+Running from: /usr/share/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2019-10-08 22:03:11.863+0000 [id=1]	INFO	org.eclipse.jetty.util.log.Log#initialized: Logging initialized @438ms to org.eclipse.jetty.util.log.JavaUtilLog
+2019-10-08 22:03:11.976+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2019-10-08 22:03:12.010+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2019-10-08 22:03:12.066+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-9.4.z-SNAPSHOT; built: 2019-05-02T00:04:53.875Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_212-b04
+2019-10-08 22:03:12.341+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2019-10-08 22:03:12.388+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: DefaultSessionIdManager workerName=node0
+2019-10-08 22:03:12.388+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: No SessionScavenger set, using defaults
+2019-10-08 22:03:12.392+0000 [id=1]	INFO	o.e.j.server.session.HouseKeeper#startScavenging: node0 Scavenging every 600000ms
+Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2019-10-08 22:03:12.972+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@70e38ce1{Jenkins v2.199,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+2019-10-08 22:03:13.000+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@668bc3d5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2019-10-08 22:03:13.001+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started @1577ms
+2019-10-08 22:03:13.001+0000 [id=22]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine v4.0 running: controlPort=disabled
+2019-10-08 22:03:14.891+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2019-10-08 22:03:15.082+0000 [id=39]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2019-10-08 22:03:21.124+0000 [id=35]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2019-10-08 22:03:21.137+0000 [id=37]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2019-10-08 22:03:22.568+0000 [id=36]	INFO	h.ExtensionFinder$GuiceFinder$FaultTolerantScope$1#error: Failed to instantiate optional component hudson.plugins.build_timeout.operations.AbortAndRestartOperation$DescriptorImpl; skipping
+2019-10-08 22:03:22.749+0000 [id=30]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2019-10-08 22:03:22.962+0000 [id=39]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2019-10-08 22:03:22.989+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork$1#run: Started Download metadata
+2019-10-08 22:03:23.026+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork$1#run: Finished Download metadata. 35 ms
+2019-10-08 22:03:23.082+0000 [id=30]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2019-10-08 22:03:24.984+0000 [id=21]	INFO	hudson.WebAppMain$3#run: Jenkins is fully up and running
+GOT CONTEXT FOR Iniciar Container mario
+GOT CONTEXT FOR Baixar container jenkins
+2019-10-08 22:04:08.228+0000 [id=23]	INFO	winstone.Logger#logInternal: JVM is terminating. Shutting down Jetty
