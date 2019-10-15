@@ -5,16 +5,21 @@ pem_path=../keys/Web_SP.pem
 dockergit_v2_path=scripts/Install_Docker_Git_2.sh
 up_jenkins_path=scripts/up_Jenkins.sh
 ansible_path=../Ansible
+scripts_path=scripts
 
 echo "################# "
 echo " Terraform init"
 echo "################# "
+echo " "
+sleep 1
 
 terraform init
 
 echo "################# "
 echo " terraform apply"
 echo "################# "
+echo " "
+sleep 1
 
 terraform apply
 
@@ -38,13 +43,25 @@ echo " "
 echo "########################################## "
 echo "#  copy the public dns to ansible hosts  #"
 echo "########################################## "
+echo " "
 sleep 1
 
 echo "$public_dns ansible_python_interpreter=/usr/bin/python3 ansible_ssh_private_key_file=../keys/Web_SP.pem ansible_user=ubuntu" > $ansible_path/hosts  
 
+
+echo " "
+echo "################################ "
+echo "# change permission            #"
+echo "################################ "
+echo " "
+
+scp -i $scripts_path/permission.sh $user@$public_dns:
+ssh -i $pem_path $user@$public_dns './permission.sh &'
+
 echo "################################################################## "
 echo "# installing the Docker, Docker-compose and Git with --- ANSIBLE #"
 echo "################################################################## "
+echo " "
 sleep 1
 
 ansible-playbook $ansible_path/docker_ubuntu.yml -i $ansible_path/hosts
@@ -52,6 +69,8 @@ ansible-playbook $ansible_path/docker_ubuntu.yml -i $ansible_path/hosts
 echo "################################ "
 echo "# copy the script up_Jenkins   #"
 echo "################################ "
+echo " "
+sleep 1
 sleep 1
 
 scp -i $pem_path $up_jenkins_path $user@$public_dns:
@@ -59,6 +78,8 @@ scp -i $pem_path $up_jenkins_path $user@$public_dns:
 echo "################################## "
 echo "# Start Script Container Jenkins #"
 echo "################################## "
+echo " "
+sleep 1
 sleep 2
 
 ssh -i $pem_path $user@$public_dns 'nohup ./up_Jenkins.sh &'
