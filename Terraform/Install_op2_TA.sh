@@ -13,7 +13,7 @@ echo "################# "
 echo " "
 sleep 1
 
-docker run -v $PWD:/data --workdir=/data -i -t hashicorp/terraform:light init
+terraform init
 
 echo "################# "
 echo " terraform apply"
@@ -21,45 +21,23 @@ echo "################# "
 echo " "
 sleep 1
 
-docker run -v $PWD:/data --workdir=/data -i -t hashicorp/terraform:light apply -auto-approve
+terraform apply -auto-approve
 
 
 echo " "
-echo "###################################### "
-echo " sent the public_dns to var and file # "
-echo "###################################### "
-sleep 1
+echo "################# "
 public_dns=`terraform output instance_public_dns`  
-public_dns2=`docker run -v $PWD:/data --workdir=/data -i -t hashicorp/terraform:light output instance_public_dns`  
-docker run -v $PWD:/data --workdir=/data -i -t hashicorp/terraform:light output instance_public_dns > public_dns2.txt  
 echo " "
 
-echo "######################################### "
-echo "# showing the var content public_dns    #"
-echo "######################################### "
-echo " "
-echo $public_dns
-echo $public_dns2
-echo " "
-
-echo "################################## "
-echo "# showing the public_dns file    #"
-echo "################################## "
-echo " "
-cat public_dns2.txt
-echo " "
 
 echo " "
-echo "*** Wait a moment, Server starting ***"
+echo "*** Wait a moment ***"
 echo " "
 
 sleep 25
 
-echo "############################################## "
-echo "#       senting the key to known hosts       #"
-echo "############################################## "
-echo " "
 ssh-keyscan -T 240 $public_dns >> ~/.ssh/known_hosts 
+
 
 echo " "
 echo "########################################## "
@@ -104,7 +82,7 @@ echo "################################## "
 echo " "
 sleep 1
 
-ssh -i $pem_path $user@$public_dns 'sudo nohup ./up_Jenkins.sh &'
+ssh -i $pem_path $user@$public_dns 'nohup ./up_Jenkins.sh &'
 
 echo ""
 echo ""
@@ -116,15 +94,7 @@ echo ""
 echo "############################# "
 echo ""
 echo ""
-echo "QUANTIDADE DE VEZES QUE O CONTAINER FOI UTILIZADO: "
-echo "--------------------------------------- "
-sudo docker ps -a
 echo ""
-echo ""
-echo "Containers removidos "
-echo "--------------------------------------- "
-docker rm $(docker ps -qa)
-sudo docker ps -a
 echo ""
 echo ""
 echo ""
