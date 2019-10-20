@@ -63,8 +63,9 @@ echo "#     change permission        #"
 echo "################################ "
 echo " "
 sleep 1
-
 scp -i $pem_path $scripts_path/permission.sh $user@$public_dns:
+
+sleep 1
 ssh -i $pem_path $user@$public_dns './permission.sh'
 
 echo "################################ "
