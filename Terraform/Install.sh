@@ -104,7 +104,7 @@ echo "################################## "
 echo " "
 sleep 1
 
-ssh -i $pem_path $user@$public_dns 'sudo nohup ./up_Jenkins.sh &'
+ssh -i $pem_path $user@$public_dns 'nohup ./up_Jenkins.sh &'
 
 echo ""
 echo ""
@@ -116,7 +116,7 @@ echo ""
 echo "############################# "
 echo ""
 echo ""
-echo "QUANTIDADE DE VEZES QUE O CONTAINER FOI UTILIZADO: "
+echo "QUANTIDADE DE VEZES QUE O CONTAINER TERRAFORM FOI UTILIZADO: "
 echo "--------------------------------------- "
 sudo docker ps -a
 echo ""
