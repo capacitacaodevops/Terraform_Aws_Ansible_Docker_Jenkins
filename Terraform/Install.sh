@@ -29,7 +29,8 @@ echo "###################################### "
 echo " sent the public_dns to var and file # "
 echo "###################################### "
 sleep 1
-public_dns=`terraform output instance_public_dns`  
+public_dns=`terraform output instance_public_dns` 
+
 public_dns2=`docker run -v $PWD:/data --workdir=/data -i -t hashicorp/terraform:light output instance_public_dns`  
 docker run -v $PWD:/data --workdir=/data -i -t hashicorp/terraform:light output instance_public_dns > public_dns2.txt  
 echo " "
