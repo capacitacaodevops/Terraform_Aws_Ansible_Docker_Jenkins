@@ -1,0 +1,32 @@
+root@Latitude-5490:/opt/git/capacitacaodevops/Terraform_Aws_Ansible_Docker_Jenkins_v0/Ansible# docker run --rm -it        -v $(pwd):/ansible/playbooks     diellyr/ansible_v3 docker_ubuntu.yml -i hosts -vvv
+ansible-playbook 2.7.10
+  config file = /ansible/playbooks/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /ansible/lib/ansible
+  executable location = /ansible/bin/ansible-playbook
+  python version = 2.7.14 (default, Feb 22 2018, 22:26:54) [GCC 5.3.0]
+Using /ansible/playbooks/ansible.cfg as config file
+/ansible/playbooks/hosts did not meet host_list requirements, check plugin documentation if this is unexpected
+/ansible/playbooks/hosts did not meet script requirements, check plugin documentation if this is unexpected
+Parsed /ansible/playbooks/hosts inventory source with ini plugin
+
+PLAYBOOK: docker_ubuntu.yml ********************************************************************************************************************************************************************************
+1 plays in docker_ubuntu.yml
+
+PLAY [all] *************************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *************************************************************************************************************************************************************************************
+task path: /ansible/playbooks/docker_ubuntu.yml:2
+Using module file /ansible/lib/ansible/modules/system/setup.py
+<ec2-18-231-50-77.sa-east-1.compute.amazonaws.com> ESTABLISH SSH CONNECTION FOR USER: ubuntu
+<ec2-18-231-50-77.sa-east-1.compute.amazonaws.com> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o 'IdentityFile="../keys/Web_SP.pem"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=ubuntu -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/a78d57029d ec2-18-231-50-77.sa-east-1.compute.amazonaws.com '/bin/sh -c '"'"'sudo -H -S -n -u root /bin/sh -c '"'"'"'"'"'"'"'"'echo BECOME-SUCCESS-mzmwevvuarbuwsaqrvwvhmgxpinfofrf; /usr/bin/python3'"'"'"'"'"'"'"'"' && sleep 0'"'"''
+fatal: [ec2-18-231-50-77.sa-east-1.compute.amazonaws.com]: UNREACHABLE! => {
+    "changed": false, 
+    "msg": "SSH Error: data could not be sent to remote host \"ec2-18-231-50-77.sa-east-1.compute.amazonaws.com\". Make sure this host can be reached over ssh", 
+    "unreachable": true
+}
+
+PLAY RECAP *************************************************************************************************************************************************************************************************
+ec2-18-231-50-77.sa-east-1.compute.amazonaws.com : ok=0    changed=0    unreachable=1    failed=0   
+
+
