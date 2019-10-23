@@ -69,16 +69,7 @@ echo "########################################## "
 echo " "
 sleep 1
 
-#echo "$public_dns ansible_python_interpreter=/usr/bin/python3 ansible_ssh_private_key_file=../keys/Web_SP.pem ansible_user=ubuntu" > $ansible_path/hosts  
-echo "$public_dns ansible_python_interpreter=/usr/bin/python3 ansible_ssh_private_key_file=Web_SP.pem ansible_user=ubuntu" > hosts  
-
-
-echo "################################################################## "
-echo "# ping with --- ANSIBLE #"
-echo "################################################################## "
-echo " "
-
-docker run --rm --network host -v $(pwd):/ansible diellyr/ansible -i hosts all -m ping -vvv
+echo "$public_dns ansible_python_interpreter=/usr/bin/python3 ansible_ssh_private_key_file=../keys/Web_SP.pem ansible_user=ubuntu" > $ansible_path/hosts  
 
 
 echo "################################################################## "
@@ -87,9 +78,7 @@ echo "################################################################## "
 echo " "
 sleep 1
 
-#ansible-playbook $ansible_path/docker_ubuntu.yml -i $ansible_path/hosts
-docker run --rm --network host -v $(pwd):/ansible diellyr/ansible-playbook docker_ubuntu.yml -i hosts  
-
+ansible-playbook $ansible_path/docker_ubuntu.yml -i $ansible_path/hosts
 
 echo " "
 echo "################################ "
