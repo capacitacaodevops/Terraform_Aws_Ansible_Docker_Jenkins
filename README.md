@@ -6,7 +6,7 @@
 - Docker instalado
 - conhecimentos básicos Aws
 
-### - Instalação
+### - Provisionamento
 
 - configurar as credentials Aws
 - na pasta terraform, executar o comando: ./install.sh
